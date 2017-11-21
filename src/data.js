@@ -1,4 +1,4 @@
-﻿[
+const data = ﻿[
  {
    "Country Name": "Sub-Saharan Africa",
    "1992": 0.8091778196,
@@ -181,4 +181,6 @@
    "2013": 1.355224977,
    "2014": 1.461479556
  }
-]
+];
+
+export default data;
