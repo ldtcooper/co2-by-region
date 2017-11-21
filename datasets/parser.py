@@ -17,10 +17,20 @@
 import csv
 
 template_dict = {}
+data_dict = {}
 
 with open('raw_csv_data.csv', 'rt') as f:
     reader = csv.reader(f)
     for row in reader:
         if row[0] == "Country Name":
-            for el in row[0]:
-                template_dict[]
+            for ind, el in enumerate(row):
+                if el == "Country Name":
+                    next
+                else:
+                    data_dict[el] = {}
+                    template_dict[ind] = el
+        else:
+            region = row[0]
+            for ind, el in enumerate(row):
+                data_dict[template_dict[ind]] = el
+    print(data_dict)
