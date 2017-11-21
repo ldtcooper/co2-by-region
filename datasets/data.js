@@ -1,3 +1,12 @@
+// needs to be converted into an array of objects
+// that look something like this:
+// {
+//   "year": "1992",
+//   "Sub-Saharan Africa": 0.809...,
+//   "Latin America and Caribbean": ...,
+//   ...
+// }
+
 const data = ﻿[
  {
    "Country Name": "Sub-Saharan Africa",
