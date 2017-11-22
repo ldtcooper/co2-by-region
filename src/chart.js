@@ -21,7 +21,7 @@ class Chart extends Component {
           <XAxis dataKey="year">
             <Label value="Year" offset={0} position="insideBottom" />
           </XAxis>
-          <YAxis label={"CO2 Emissions\n(Metric tons per capita)"}/>
+          <YAxis label={{ value: 'CO2 Emissions\n(Metric Tons per Capita)', angle: -90, position: 'insideLeft' }}/>
           <CartesianGrid strokeDashArray = "3 3"/>
         </AreaChart>
       //</ResponsiveContainer>
