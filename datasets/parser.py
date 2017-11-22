@@ -15,6 +15,7 @@
 # }
 
 import csv
+import json
 
 ind_to_year = {}
 data_dict = {}
@@ -38,3 +39,9 @@ with open('raw_csv_data.csv', 'rt') as f:
                 else:
                     data_year = ind_to_year[ind]
                     data_dict[data_year][region] = datapoint
+
+array_of_objects = []
+for k in data_dict.keys():
+    array_of_objects.append(data_dict[k])
+
+print(array_of_objects)
