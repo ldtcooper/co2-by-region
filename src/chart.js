@@ -15,12 +15,12 @@ class Chart extends Component {
 
   render() {
     return(
-      <ResponsiveContainer>
-        <AreaChart data={this.data}>
+      //<ResponsiveContainer>
+        <AreaChart width={1000} height={600} data={this.data}>
           <XAxis dataKey="year"/>
           <CartesianGrid strokeDashArray = "3 3"/>
         </AreaChart>
-      </ResponsiveContainer>
+      //</ResponsiveContainer>
     );
   }
 }
