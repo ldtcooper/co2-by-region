@@ -16,7 +16,7 @@
 
 import csv
 
-template_dict = {}
+ind_to_year = {}
 data_dict = {}
 
 with open('raw_csv_data.csv', 'rt') as f:
@@ -27,10 +27,9 @@ with open('raw_csv_data.csv', 'rt') as f:
                 if el == "Country Name":
                     next
                 else:
-                    data_dict[el] = {}
-                    template_dict[ind] = el
+                    data_dict[el] = {"year": el}
+                    ind_to_year[ind] = el
         else:
             region = row[0]
-            for ind, el in enumerate(row):
-                data_dict[template_dict[ind]] = el
-    print(data_dict)
+            for ind, datapoint in enumerate(row):
+                data_year = ind_to_year[ind]
