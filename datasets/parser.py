@@ -27,8 +27,9 @@ with open('raw_csv_data.csv', 'rt') as f:
                 if el == "Country Name":
                     continue
                 else:
-                    data_dict[el] = {"year": el}
-                    ind_to_year[ind] = el
+                    yr = int(el)
+                    data_dict[yr] = {"year": yr}
+                    ind_to_year[ind] = yr
         else:
             region = row[0]
             for ind, datapoint in enumerate(row):
@@ -37,4 +38,3 @@ with open('raw_csv_data.csv', 'rt') as f:
                 else:
                     data_year = ind_to_year[ind]
                     data_dict[data_year][region] = datapoint
-            
