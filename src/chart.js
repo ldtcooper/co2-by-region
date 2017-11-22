@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import data from '/data.js';
 import {
   AreaChart,
   CartesianGrid,
   XAxis,
-  YAxis
+  YAxis,
+  ResponsiveContainer
 } from 'recharts';
 
 class Chart extends Component {
@@ -15,9 +15,14 @@ class Chart extends Component {
 
   render() {
     return(
-      <AreaChart>
-        <CartesianGrid strokeDashArray = "3 3"/>
-      </AreaChart>
+      <ResponsiveContainer>
+        <AreaChart data={this.data}>
+          <XAxis dataKey="year"/>
+          <CartesianGrid strokeDashArray = "3 3"/>
+        </AreaChart>
+      </ResponsiveContainer>
     );
   }
 }
+
+export default Chart;
