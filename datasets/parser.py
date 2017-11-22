@@ -44,4 +44,5 @@ array_of_objects = []
 for k in data_dict.keys():
     array_of_objects.append(data_dict[k])
 
-print(array_of_objects)
+with open('parsed_data.json', 'w') as outfile:
+    json.dump(array_of_objects, outfile)
