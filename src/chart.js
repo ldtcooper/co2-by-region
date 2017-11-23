@@ -17,6 +17,11 @@ class Chart extends Component {
   propsList() {
       const props = [
         {
+          region: "South Asia",
+          stroke: ,
+          fill:
+        },
+        {
           region: "Sub-Saharan Africa",
           stroke: ,
           fill:
@@ -32,22 +37,17 @@ class Chart extends Component {
           fill:
         },
         {
-          region: "Europe & Central Asia",
-          stroke: ,
-          fill:
-        },
-        {
           region: "Middle East & North Africa",
           stroke: ,
           fill:
         },
         {
-          region: "North America",
+          region: "Europe & Central Asia",
           stroke: ,
           fill:
         },
         {
-          region: "South Asia",
+          region: "North America",
           stroke: ,
           fill:
         }
