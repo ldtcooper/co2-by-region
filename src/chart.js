@@ -18,38 +18,38 @@ class Chart extends Component {
       const props = [
         {
           region: "South Asia",
-          stroke: ,
-          fill:
+          stroke: "#381A1C",
+          fill: "#381A1C"
         },
         {
           region: "Sub-Saharan Africa",
-          stroke: ,
-          fill:
+          stroke: "#563547",
+          fill: "#563547"
         },
         {
           region: "Latin America & Caribbean",
-          stroke: ,
-          fill:
+          stroke: "#5C5C78",
+          fill: "#5C5C78"
         },
         {
           region: "East Asia & Pacific",
-          stroke: ,
-          fill:
+          stroke: "#46889B",
+          fill: "#46889B"
         },
         {
           region: "Middle East & North Africa",
-          stroke: ,
-          fill:
+          stroke: "#3DB3A1",
+          fill: "#3DB3A1"
         },
         {
           region: "Europe & Central Asia",
-          stroke: ,
-          fill:
+          stroke: "#7FD98D",
+          fill: "#7FD98D"
         },
         {
           region: "North America",
-          stroke: ,
-          fill:
+          stroke: "#E2F573",
+          fill: "#E2F573"
         }
       ];
     }
