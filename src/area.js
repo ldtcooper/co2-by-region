@@ -11,3 +11,5 @@ const AreaComponent = (props) => {
     />
   );
 };
+
+export default AreaComponent;

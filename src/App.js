@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Chart from './chart.js';
 import data from './parsed_data.js';
