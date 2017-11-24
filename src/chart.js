@@ -6,7 +6,8 @@ import {
   YAxis,
   ResponsiveContainer,
   Label,
-  Area
+  Area,
+  Tooltip
 } from 'recharts';
 
 const Chart = (props) => {
@@ -17,7 +18,7 @@ const Chart = (props) => {
         <XAxis dataKey="year" scale="time" minTickGap={2}>
           <Label value="Year" offset={0} position="insideBottom" />
         </XAxis>
-        <YAxis />
+        <YAxis label={{ value: 'CO2 Emissions\n(Metric tons per capita)', angle: -90, position: 'insideLeft' }} />
         <CartesianGrid strokeDashArray = "3 3"/>
         <Area type="monotone" dataKey="South Asia" stroke="#381A1C" fill="#381A1C" stackId="1"/>
         <Area type="monotone" dataKey="Sub-Saharan Africa" stroke="#563547" fill="#563547" stackId="1"/>
@@ -26,6 +27,7 @@ const Chart = (props) => {
         <Area type="monotone" dataKey="Middle East & North Africa" stroke="#3DB3A1" fill="#3DB3A1" stackId="1"/>
         <Area type="monotone" dataKey="Europe & Central Asia" stroke="#7FD98D" fill="#7FD98D" stackId="1"/>
         <Area type="monotone" dataKey="North America" stroke="#E2F573" fill="#E2F573" stackId="1"/>
+        <Tooltip />
       </AreaChart>
     //</ResponsiveContainer>
   );
