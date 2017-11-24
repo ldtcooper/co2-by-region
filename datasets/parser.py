@@ -38,7 +38,7 @@ with open('raw_csv_data.csv', 'rt') as f:
                     continue
                 else:
                     data_year = ind_to_year[ind]
-                    data_dict[data_year][region] = datapoint
+                    data_dict[data_year][region] = float(datapoint)
 
 array_of_objects = []
 for k in data_dict.keys():

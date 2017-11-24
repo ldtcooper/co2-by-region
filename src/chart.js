@@ -7,56 +7,13 @@ import {
   ResponsiveContainer,
   Label
 } from 'recharts';
-import AreaComponent from './area.js';
+import Areas from './area.js';
 
 class Chart extends Component {
   constructor(props) {
     super(props);
     this.data = this.props.data;
   }
-
-  areas() {
-      const props = [
-        {
-          region: "South Asia",
-          stroke: "#381A1C",
-          fill: "#381A1C"
-        },
-        {
-          region: "Sub-Saharan Africa",
-          stroke: "#563547",
-          fill: "#563547"
-        },
-        {
-          region: "Latin America & Caribbean",
-          stroke: "#5C5C78",
-          fill: "#5C5C78"
-        },
-        {
-          region: "East Asia & Pacific",
-          stroke: "#46889B",
-          fill: "#46889B"
-        },
-        {
-          region: "Middle East & North Africa",
-          stroke: "#3DB3A1",
-          fill: "#3DB3A1"
-        },
-        {
-          region: "Europe & Central Asia",
-          stroke: "#7FD98D",
-          fill: "#7FD98D"
-        },
-        {
-          region: "North America",
-          stroke: "#E2F573",
-          fill: "#E2F573"
-        }
-      ];
-      return( props.map( (prp) => {
-        return(<AreaComponent props={prp}/>);
-      }));
-    }
 
   render() {
     return(
@@ -65,9 +22,11 @@ class Chart extends Component {
           <XAxis dataKey="year" scale="time">
             <Label value="Year" offset={0} position="insideBottom" />
           </XAxis>
-          <YAxis />
+          <YAxis>
+            <Label value="Y"/>
+          </YAxis>
           <CartesianGrid strokeDashArray = "3 3"/>
-          {this.areas}
+          <Areas />
         </AreaChart>
       //</ResponsiveContainer>
     );
