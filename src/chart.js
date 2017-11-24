@@ -8,7 +8,6 @@ import {
   Label,
   Area
 } from 'recharts';
-import AreaComponent from './area.js';
 
 const Chart = (props) => {
   return(
