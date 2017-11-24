@@ -51,7 +51,8 @@ const propVals = [
 ];
 
 const Areas = () => {
-  return( propVals.map( (el) => ( <AreaComponent props={el}/>)));
-};
 
-export default Areas;
+
+    return( propVals.map( (el) => ( <AreaComponent props={el}/>)));
+
+  };
