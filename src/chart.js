@@ -18,8 +18,8 @@ class Chart extends Component {
   render() {
     return(
       //<ResponsiveContainer>
-        <AreaChart width={1200} height={600} data={this.data}>
-          <XAxis dataKey="year" scale="time">
+        <AreaChart width={1200} height={600} data={this.data} margin={{top: 10, right: 30, left: 0, bottom: 0}}>
+          <XAxis dataKey="year" scale="time" minTickGap={2}>
             <Label value="Year" offset={0} position="insideBottom" />
           </XAxis>
           <YAxis>
